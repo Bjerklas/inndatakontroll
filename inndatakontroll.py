@@ -1,5 +1,4 @@
 class Inndatakontroll:
-    #Ingen eksplisitt definert constructor for nå
     #Sjekk om et tall er et heltall
     def numIsInteger(self,number):
         try:
@@ -8,7 +7,7 @@ class Inndatakontroll:
             return False
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde(Yatavi)
-    #TODO: Sjekke om en string har en maksimumslengde(sharuca)
+    # Sjekke om en string har en maksimumslengde
     def checkStringMaxLenght( string):
         if len(string) >= 10:
             print("Du kan kun ha 10 bokstaver")
@@ -16,7 +15,6 @@ class Inndatakontroll:
         else:
             print("Du har ", len(string), " bokstaver") 
             True
-
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
         Men da må man kunne definere i input hvis man ikke vil ha

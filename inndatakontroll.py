@@ -23,7 +23,7 @@ class Inndatakontroll:
     #TODO: Passord2: Sjekke at et passord tilfredsstiller passord1 og inneholder tall
     #TODO: Passord3: Sjekke at et passord tilfredsstiller passord2 og inneholder spesielle symboler
     #TODO: Sjekke at en string kun inneholder bokstaver, og ikke andre symboler eller tall
-    #TODO: Sjekke om en string kun har store bokstaver
+    #TODO: Sjekke om en string kun har store bokstaver (Manni)
     #TODO: SJekke om en string kun har små bokstaver
     #Petter claimer små bokstaver:)
     #TODO: Sjekke at en string er ett ord, hvor første bokstav er stor og alle andre er små
@@ -34,7 +34,7 @@ class Inndatakontroll:
        En setning kan også ha bindestreker og komma på slutten av ord,
        også avslutter den  med et terminalsymbol (punktum, utropstegn, spørsmålstegn)
     """
-    #TODO: Sjekke at en tekst kun består av gyldige setninger
+    #TODO: Sjekke at en tekst kun består av gyldige setninger 
     #TODO: Sjekke at en string ikke inneholder visse symboler som kan defineres i input
     #TODO: Navn1: Sjekke at en string kun er ett ord, f.eks. bare et fornavn. Kan bare være bokstaver
     #TODO: Navn2: Sjekke at en string er kun to ord og at begge ordene har en viss lengde, f.eks. fornavn etternavn

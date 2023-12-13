@@ -1,6 +1,6 @@
 class Inndatakontroll:
     #Ingen eksplisitt definert constructor for nå
-    #Sjekk om et tall er et heltall (Niklas)
+    #Sjekk om et tall er et heltall
     def numIsInteger(self,number):
         try:
             return number.is_integer()
@@ -8,7 +8,7 @@ class Inndatakontroll:
             return False
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde
-    #TODO: Sjekke om en string har en maksimumslengde
+    #TODO: Sjekke om en string har en maksimumslengde(sharuca)
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
         Men da må man kunne definere i input hvis man ikke vil ha
@@ -46,3 +46,4 @@ class Inndatakontroll:
     #TODO: Filer basic: Sjekke at en input-fil har filtypen vi ser etter, f.eks. pdf eller txt ved å se på filendingen
     #TODO: Filer avansert: sjekk at ikke noen prøver å laste opp ulovlige filer ved å manipulere filendingen
     #Sjekk https://www.geeksforgeeks.org/determining-file-format-using-python/ for hjelp med den forrige
+

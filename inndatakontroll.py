@@ -9,6 +9,14 @@ class Inndatakontroll:
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde(Yatavi)
     #TODO: Sjekke om en string har en maksimumslengde(sharuca)
+    def checkStringMaxLenght( string):
+        if len(string) >= 10:
+            print("Du kan kun ha 10 bokstaver")
+            return False
+        else:
+            print("Du har ", len(string), " bokstaver") 
+            True
+
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
         Men da må man kunne definere i input hvis man ikke vil ha

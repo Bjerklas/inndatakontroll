@@ -7,7 +7,7 @@ class Inndatakontroll:
         except AttributeError:
             return False
     #TODO: Sjekke om en string representerer et tall
-    #TODO: Sjekke om en string har en minimumslengde
+    #TODO: Sjekke om en string har en minimumslengde(Yatavi)
     #TODO: Sjekke om en string har en maksimumslengde(sharuca)
     """ 
         Tanke: Kanskje de to siste der kan kombineres?

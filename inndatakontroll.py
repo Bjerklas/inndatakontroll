@@ -1,13 +1,13 @@
 class Inndatakontroll:
     #Ingen eksplisitt definert constructor for nå
-    #Sjekk om et tall er et heltall (Niklas)
+    #Sjekk om et tall er et heltall
     def numIsInteger(self,number):
         try:
             return number.is_integer()
         except AttributeError:
             return False
     #TODO: Sjekke om en string representerer et tall
-    #TODO: Sjekke om en string har en minimumslengde(Yatavi)
+    #TODO: Sjekke om en string har en minimumslengde
     #TODO: Sjekke om en string har en maksimumslengde
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
@@ -18,6 +18,7 @@ class Inndatakontroll:
     #TODO: Sjekke at en dato er i fortiden
     #TODO: Sjekke at en fødselsdato gir en alder som er større enn et tall, f.eks. over 18
     #TODO: Sjekke at en fødselsdato gir en alder som er mindre enn et tall, f.eks. under 18
+    #Lance claimer passord
     #TODO: Passord1: Sjekke at et passord har minst X tegn og inneholder små og store bokstaver
     #TODO: Passord2: Sjekke at et passord tilfredsstiller passord1 og inneholder tall
     #TODO: Passord3: Sjekke at et passord tilfredsstiller passord2 og inneholder spesielle symboler
@@ -46,3 +47,4 @@ class Inndatakontroll:
     #TODO: Filer basic: Sjekke at en input-fil har filtypen vi ser etter, f.eks. pdf eller txt ved å se på filendingen
     #TODO: Filer avansert: sjekk at ikke noen prøver å laste opp ulovlige filer ved å manipulere filendingen
     #Sjekk https://www.geeksforgeeks.org/determining-file-format-using-python/ for hjelp med den forrige
+

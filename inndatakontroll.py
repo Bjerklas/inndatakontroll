@@ -8,6 +8,13 @@ class Inndatakontroll:
             return False
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde(Yatavi)
+    def sjekkMinStringLengde(string):
+        if len(string) >= 2:
+            print(len(string))
+            return True
+        else:
+            print(len(string))
+            return False
     #TODO: Sjekke om en string har en maksimumslengde
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
@@ -46,3 +53,6 @@ class Inndatakontroll:
     #TODO: Filer basic: Sjekke at en input-fil har filtypen vi ser etter, f.eks. pdf eller txt ved å se på filendingen
     #TODO: Filer avansert: sjekk at ikke noen prøver å laste opp ulovlige filer ved å manipulere filendingen
     #Sjekk https://www.geeksforgeeks.org/determining-file-format-using-python/ for hjelp med den forrige
+
+
+print(sjekkMinStringLengde("Y"))

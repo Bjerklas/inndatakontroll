@@ -8,7 +8,7 @@ class Inndatakontroll:
             return False
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde(Yatavi)
-    def sjekkMinStringLengde(string):
+    def sjekkMinStringLengde(self,string):
         if len(string) >= 2:
             print(len(string))
             return True
@@ -54,5 +54,5 @@ class Inndatakontroll:
     #TODO: Filer avansert: sjekk at ikke noen prøver å laste opp ulovlige filer ved å manipulere filendingen
     #Sjekk https://www.geeksforgeeks.org/determining-file-format-using-python/ for hjelp med den forrige
 
-
-print(sjekkMinStringLengde("Y"))
+ik = Inndatakontroll()
+print(ik.sjekkMinStringLengde("Yatavi"))

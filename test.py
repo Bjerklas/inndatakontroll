@@ -16,5 +16,10 @@ def testMetode(testnavn, tester, metode):
 #Sjekk om et tall er et heltall
 testnavn = "Sjekke om et tall (float/int) er et heltall"
 heltall_tester = [(5,True),(60,True),(10.0,True),(-5,True),(-4.0,True),(3.000,True),(13.4,False),(-5.1,False),("4",False),("14.8",False)]
-testMetode(testnavn, heltall_tester, ik.numIsInteger)
+# testMetode(testnavn, heltall_tester, ik.numIsInteger)
+
+
+
+tekst = 15.8
+print(ik.sjekkMinStringLengde(tekst,5))
 

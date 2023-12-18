@@ -10,13 +10,16 @@ class Inndatakontroll:
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde(Yatavi)
 
-    def sjekkMinStringLengde(self,string):
-        if len(string) >= 2:
-            print(len(string))
-            return True
-        else:
-            print(len(string))
-            return False
+    def sjekkMinStringLengde(self,string,minLengde):
+        try: 
+            if not isinstance(string, str):
+                return "Feil datatype. Bruk string"
+            if len(string) >= minLengde:
+                return True
+            else:
+                return False
+        except AttributeError:
+            return "Feil datatype. Bruk string"
     #TODO: Sjekke om en string har en maksimumslengde
     # Sjekke om en string har en maksimumslengde
     def checkStringMaxLenght( string):
@@ -65,8 +68,4 @@ class Inndatakontroll:
     #TODO: Filer basic: Sjekke at en input-fil har filtypen vi ser etter, f.eks. pdf eller txt ved å se på filendingen
     #TODO: Filer avansert: sjekk at ikke noen prøver å laste opp ulovlige filer ved å manipulere filendingen
     #Sjekk https://www.geeksforgeeks.org/determining-file-format-using-python/ for hjelp med den forrige
-
-
-ik = Inndatakontroll()
-print(ik.sjekkMinStringLengde("Yatavi"))
 

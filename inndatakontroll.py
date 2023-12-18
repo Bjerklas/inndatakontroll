@@ -24,7 +24,8 @@ class Inndatakontroll:
     """
     #TODO: Sjekke at en dato er i fremtiden
     #TODO: Sjekke at en dato er i fortiden
-    #TODO: Sjekke at en fødselsdato gir en alder som er større enn et tall, f.eks. over 18
+    #TODO: Sjekke at en fødselsdato gir en alder som er større enn et tall, f.eks. over 18 (Sharuca)
+    
     #TODO: Sjekke at en fødselsdato gir en alder som er mindre enn et tall, f.eks. under 18
     #Lance claimer passord
     #TODO: Passord1: Sjekke at et passord har minst X tegn og inneholder små og store bokstaver

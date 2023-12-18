@@ -45,7 +45,19 @@ class Inndatakontroll:
     #TODO: Sjekke at en string kun inneholder bokstaver, og ikke andre symboler eller tall
     #TODO: Sjekke om en string kun har store bokstaver (Manni)
     #TODO: SJekke om en string kun har små bokstaver
+
+    def smallLetterCheck(setning):
+        try:
+            if setning == str.lower(setning):
+                return True
+            else:
+                return False
+        except AttributeError:
+            print("Feil input")
+            return False
+
     #Petter claimer små bokstaver:)
+
     #TODO: Sjekke at en string er ett ord, hvor første bokstav er stor og alle andre er små
     #TODO: Sjekke at en setning er gyldig
     """En setning er gyldig hvis den har stor forbokstav og eller små bokstaver. Videre må den bestå av 

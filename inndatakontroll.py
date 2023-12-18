@@ -1,6 +1,8 @@
 class Inndatakontroll:
     #Sjekk om et tall er et heltall
     def numIsInteger(self,number):
+        if isinstance(number,int):
+            return True
         try:
             return number.is_integer()
         except AttributeError:

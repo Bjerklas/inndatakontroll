@@ -27,9 +27,13 @@ class Inndatakontroll:
     #TODO: SJekke om en string kun har små bokstaver
 
     def smallLetterCheck(setning):
-        if setning == str.lower(setning):
-            return True
-        else:
+        try:
+            if setning == str.lower(setning):
+                return True
+            else:
+                return False
+        except AttributeError:
+            print("Feil input")
             return False
 
     #Petter claimer små bokstaver:)

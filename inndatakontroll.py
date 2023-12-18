@@ -1,6 +1,5 @@
 class Inndatakontroll:
-    #Ingen eksplisitt definert constructor for nå
-    #Sjekk om et tall er et heltall (Niklas)
+    #Sjekk om et tall er et heltall
     def numIsInteger(self,number):
         try:
             return number.is_integer()
@@ -8,6 +7,7 @@ class Inndatakontroll:
             return False
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde(Yatavi)
+
     def sjekkMinStringLengde(self,string):
         if len(string) >= 2:
             print(len(string))
@@ -16,6 +16,14 @@ class Inndatakontroll:
             print(len(string))
             return False
     #TODO: Sjekke om en string har en maksimumslengde
+    # Sjekke om en string har en maksimumslengde
+    def checkStringMaxLenght( string):
+        if len(string) >= 10:
+            print("Du kan kun ha 10 bokstaver")
+            return False
+        else:
+            print("Du har ", len(string), " bokstaver") 
+            True
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
         Men da må man kunne definere i input hvis man ikke vil ha
@@ -25,12 +33,14 @@ class Inndatakontroll:
     #TODO: Sjekke at en dato er i fortiden
     #TODO: Sjekke at en fødselsdato gir en alder som er større enn et tall, f.eks. over 18
     #TODO: Sjekke at en fødselsdato gir en alder som er mindre enn et tall, f.eks. under 18
+    #Lance claimer passord
     #TODO: Passord1: Sjekke at et passord har minst X tegn og inneholder små og store bokstaver
     #TODO: Passord2: Sjekke at et passord tilfredsstiller passord1 og inneholder tall
     #TODO: Passord3: Sjekke at et passord tilfredsstiller passord2 og inneholder spesielle symboler
     #TODO: Sjekke at en string kun inneholder bokstaver, og ikke andre symboler eller tall
-    #TODO: Sjekke om en string kun har store bokstaver
+    #TODO: Sjekke om en string kun har store bokstaver (Manni)
     #TODO: SJekke om en string kun har små bokstaver
+    #Petter claimer små bokstaver:)
     #TODO: Sjekke at en string er ett ord, hvor første bokstav er stor og alle andre er små
     #TODO: Sjekke at en setning er gyldig
     """En setning er gyldig hvis den har stor forbokstav og eller små bokstaver. Videre må den bestå av 
@@ -39,7 +49,7 @@ class Inndatakontroll:
        En setning kan også ha bindestreker og komma på slutten av ord,
        også avslutter den  med et terminalsymbol (punktum, utropstegn, spørsmålstegn)
     """
-    #TODO: Sjekke at en tekst kun består av gyldige setninger
+    #TODO: Sjekke at en tekst kun består av gyldige setninger 
     #TODO: Sjekke at en string ikke inneholder visse symboler som kan defineres i input
     #TODO: Navn1: Sjekke at en string kun er ett ord, f.eks. bare et fornavn. Kan bare være bokstaver
     #TODO: Navn2: Sjekke at en string er kun to ord og at begge ordene har en viss lengde, f.eks. fornavn etternavn
@@ -54,5 +64,7 @@ class Inndatakontroll:
     #TODO: Filer avansert: sjekk at ikke noen prøver å laste opp ulovlige filer ved å manipulere filendingen
     #Sjekk https://www.geeksforgeeks.org/determining-file-format-using-python/ for hjelp med den forrige
 
+
 ik = Inndatakontroll()
 print(ik.sjekkMinStringLengde("Yatavi"))
+

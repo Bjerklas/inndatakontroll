@@ -1,3 +1,4 @@
+from datetime import date
 class Inndatakontroll:
     #Ingen eksplisitt definert constructor for nå
     #Sjekk om et tall er et heltall
@@ -9,13 +10,16 @@ class Inndatakontroll:
     #TODO: Sjekke om en string representerer et tall
     #TODO: Sjekke om en string har en minimumslengde
     #TODO: Sjekke om en string har en maksimumslengde(sharuca)
-    def checkStringMaxLenght( string):
-        if len(string) >= 10:
-            print("Du kan kun ha 10 bokstaver")
-            return False
-        else:
-            print("Du har ", len(string), " bokstaver") 
-            True
+    def checkStringMaxLength(self, string, maxLength):
+        try:
+            if not isinstance(string, str):
+                return "feil datatype. bruk string"
+            if len(string) >= maxLength:
+                return False
+            else:
+                True
+        except AttributeError:
+            return "Feil datatype. bruk string" 
 
     """ 
         Tanke: Kanskje de to siste der kan kombineres?
@@ -25,7 +29,6 @@ class Inndatakontroll:
     #TODO: Sjekke at en dato er i fremtiden
     #TODO: Sjekke at en dato er i fortiden
     #TODO: Sjekke at en fødselsdato gir en alder som er større enn et tall, f.eks. over 18 (Sharuca)
-    
     #TODO: Sjekke at en fødselsdato gir en alder som er mindre enn et tall, f.eks. under 18
     #Lance claimer passord
     #TODO: Passord1: Sjekke at et passord har minst X tegn og inneholder små og store bokstaver
